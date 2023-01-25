@@ -20,13 +20,11 @@ public class OperacionesBasicas {
         // TODO code application logic here
         float opc=0,dato1=0,dato2=0,result=0;
 
-        System.out.println("1.-sumar    2.-restar   3.-multiplicar  4.-dividir  otro numero.-salir");
-        System.out.println("seleccione una opcion: ");
-        opc=Integer.parseInt(JOptionPane.showInputDialog("ingrese opcion: "));
-
+        opc=Integer.parseInt(JOptionPane.showInputDialog("seleccione una opcion: \n1.-sumar    \n2.-restar   \n3.-multiplicar  \n4.-dividir  \notro numero.-salir \ningrese opcion: "));
+       
         if(opc>0&&opc<5){
-            dato1=Integer.parseInt(JOptionPane.showInputDialog("ingrese primer numero: "));
-            dato2=Integer.parseInt(JOptionPane.showInputDialog("ingrese segundo numero numero: "));
+            dato1=Integer.parseInt(JOptionPane.showInputDialog("ingrese el primer numero: "));
+            dato2=Integer.parseInt(JOptionPane.showInputDialog("ingrese el segundo numero: "));
         if(opc!=0){
             if(opc==1)
                 result=dato1+dato2;
@@ -36,12 +34,12 @@ public class OperacionesBasicas {
                 result=dato1*dato2;
             if(opc==4)
                 result=dato1/dato2;
-            System.out.print("el resultado es: ");
-            System.out.println(result);
+            //System.out.print("el resultado es: ");
+            //System.out.println(result);
         }
         JOptionPane.showMessageDialog(null, "el resultado es: "+result);
         }
-            System.out.println("saliendo...");
+            //System.out.println("saliendo...");
             JOptionPane.showMessageDialog(null,"adios");        
     }
     
